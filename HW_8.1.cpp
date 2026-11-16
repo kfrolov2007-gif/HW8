@@ -1,10 +1,10 @@
 #include <iostream>
 
 
-int a;
 
 void counting_function() {
-    a +=1;
+    static int a = 0;
+    a += 1;
     std::cout << "Number of function calls: " << a << std::endl;
 }
 
